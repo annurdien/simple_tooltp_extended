@@ -73,15 +73,16 @@ class OptionsPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              RaisedButton(
+              ElevatedButton(
                 child: const Text("Animated example"),
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                    builder: (ctx) => const AnimatedExamplePage(title: 'Flutter Demo Home Page'),
+                    builder: (ctx) => const AnimatedExamplePage(
+                        title: 'Flutter Demo Home Page'),
                   ));
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: const Text("Basics"),
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
@@ -89,7 +90,7 @@ class OptionsPage extends StatelessWidget {
                   ));
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: const Text("Obfuscate"),
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
